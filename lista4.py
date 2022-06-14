@@ -49,3 +49,22 @@ size = len(array)
 array_preco_maximo, array_combinacao_valor = cortar_tubulacao(array, size)
 array_de_tamanho = [i for i in range(size + 1)]
 print(make_table(array_de_tamanho, [0, *array], array_preco_maximo, array_combinacao_valor))
+
+
+# 2)
+# O problema de coloração de grafo é geralmente referido como o problema de
+# coloração de vértice: Atribua o menor número de cores aos vértices de um
+# determinado grafo de tal forma que não existam dois vértices adjacentes da mesma
+# cor. Considere o problema de coloração de arestas: atribua o menor número de cores
+# possível às arestas de um determinado grafo de tal forma que não haja duas arestas
+# com com cores iguais que estejam conectadas a um mesmo vértice. Explique como
+# o problema da coloração de aresta pode ser reduzido a um problema de coloração de
+# vértice.
+
+# A partir do teorema de Vizing é possível entender que o índice cromático, X'(G), é maior ou igual ao grau
+# máximo do grafo ou menor igual ao grau máximo do grafo mais um: delta(G) <= X'(G) <= delta(G) + 1.
+# Em que este grau máximo é obtido pela quantidade de conexões entre um vertice com outros vértices do grafo.
+# Ademais, segundo Skiena, Encontrar a coloração mínima das arestas de um grafo G é equivalente a encontrar a
+# coloração mínima dos vértices de seu grafo linear.
+
+
